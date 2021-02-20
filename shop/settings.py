@@ -139,3 +139,5 @@ STATICFILES_DIRS = (
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+db = dj_database_url.config()
+DATABASES['default'].update(db)
