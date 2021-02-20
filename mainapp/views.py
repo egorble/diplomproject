@@ -29,6 +29,7 @@ class ProductDetailView(CartMixin,  DetailView):
     model = Product
     queryset = Product.objects.all()
     template_name = "product_detail.html"
+    slug_url_kwarg = 'slug'
 
 
 
